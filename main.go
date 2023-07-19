@@ -68,8 +68,8 @@ func main() {
 			fmt.Println()
 			for _, api := range listAPI {
 				fmt.Printf("%s\n", api.Url)
-				fmt.Printf("- Start: %s\n", api.StartedDateTime.Format("2006-01-02T15:04:05Z07:00.000"))
-				fmt.Printf("- End: %s\n", api.EndedDateTime.Format("2006-01-02T15:04:05Z07:00.000"))
+				fmt.Printf("- Start: %s\n", api.StartedDateTime.Format("2006-01-02T15:04:05.000Z"))
+				fmt.Printf("- End: %s\n", api.EndedDateTime.Format("2006-01-02T15:04:05.000Z"))
 				fmt.Printf("- Duration: %.0fms\n", api.Time)
 				fmt.Println()
 			}
